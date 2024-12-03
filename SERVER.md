@@ -154,3 +154,9 @@ events {
 }
 
 ```
+
+`server_tokens`: Desabilita o envio(pelo nginx) da versão utilizada, atráves da versão hackers podem identificar vetores de ataque contra a aplicação, por isso sempre deixe **off**.
+
+`sendfile`: habilita o buffering no envio de arquivos, ou seja, o envio do arquivo após toda a leitura
+`sendfile_max_chunk`: determina o tamanho máximo de arquivos a seram enviados de forma direta, sem buffering(valores altos podem ocasionar gargalo de mémoria para arquivos grandes).).
+
